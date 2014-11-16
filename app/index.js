@@ -10,7 +10,7 @@ var http=require('http')
   , io=require('socket.io')(server)
 
 // async methods
-app.set('port',process.env.PORT||3000);
+app.set('port',process.env.PORT||3333);
 app.set('views',join(__dirname,'views'));
 app.set('view engine','jade');
 app.disable('x-powered-by');
