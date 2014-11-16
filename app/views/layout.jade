@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+    head
+        title wikirutas
+        link(rel='stylesheet',href='/font-awesome/css/font-awesome.min.css')
+        link(rel='stylesheet',href='/leaflet/dist/leaflet.css')
+        link(rel='stylesheet',href='/css/style.css')
+    body
+        div.wrapper
+            header
+            nav
+                div.left
+                    ul
+                        li.active: a(href='/') Tiempo real
+                        li: a(href='/stats') Información estadística
+                        li: a(href='/reports') Reportes y multas
+                div.right
+                    form
+                        input(type='text',placeholder='Buscar una localización')
+                        button(type='submit')
+                            i.fa.fa-search &nbsp;
+                .clear
+            block main
+        footer
+            div.subnav
+            div.main
+                div.wrapper
+                    p.center WikiRutas &copy; 2014
+        script(src='/jquery/dist/jquery.min.js')
+        script(src='/socket.io-client/socket.io.js')
+        script(src='/leaflet/dist/leaflet.js')
+        script(src='/leaflet-ajax/dist/leaflet.ajax.min.js')
+        script(src='/js/app.js')
+        script(src='http://localhost:35729/livereload.js')
+

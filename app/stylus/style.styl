@@ -24,6 +24,9 @@ gradient1(color1,color2)
 .clear
     clear: both
 
+.center
+    text-align: center
+
 body
     background-color: color1
 
@@ -32,7 +35,7 @@ div.wrapper
     margin: 0 auto
     header
         width: 100%
-        height: 112px
+        height: 1.0rem
 
     &>nav
         width: 100%
@@ -53,6 +56,7 @@ div.wrapper
                     a
                         float: left
                         font1(0.75rem)
+                        text-decoration: none
                         font-weight: bold
                         padding: 0.8rem 1.5rem
                         gradient1(color3, color4)
@@ -74,7 +78,7 @@ div.wrapper
                         border: 1px solid #c0c0c0
         &>div:nth-child(2)
             float: right
-            margin-left: 75px
+            margin-right: -68px
             form
                 background-color: #161513
                 padding: 0.5rem 1.25rem
@@ -99,36 +103,14 @@ div.wrapper
             background-color: color8
             margin: 0.6rem 0rem
         div.row
-            margin: 2.0rem 0rem
-            &>nav
-                float: left
-                width: 237px
-                margin-left: 8px
-                &>form
-                    display: flex
-                    flex-direction: column
-                    flex-wrap: nowrap
-                    justify-content: space-between
-                    align-items: flex-end
-                    align-content: stretch
-                    select
-                        width: 100%
-                        margin: 0.25rem 0
-                    input[type='submit']
-                        margin: 0.25rem 0
-                        border: none
-                        background-color: color8
-                        color: #ffffff
-                        font-weight: bold
-                        padding: 0.25rem 1.0rem
-                        border-radius: 0.5rem
+            margin: 1.0rem 0rem
             div#map
                 border: 1px solid #bbcecc
                 border-radius: 0.5rem;
                 background-color: color2
-                margin-left: 280px
-                width: 650px
-                height: 458px
+                margin-left: 16px
+                width: 914px
+                height: 512px
         h2
             background-color: color8
             color: #ffffff
@@ -146,31 +128,19 @@ div.wrapper
             align-content: center
             margin-bottom: 1.0rem
             div.column
-                ul
-                    list-style: none
-                    li
-                        display: block
-                        a
-                            float: left
-                            color: #295e70
-                            font-weight: bold
-                            padding: 0.35rem 0
-                            font1(0.8rem)
-    section.subnav
-        width: 100%
-        height: 90px
-
+                &>div
+                    color: #295e70
+                    font-weight: bold
+                    padding: 0.2rem 0.4rem
+                    font1(0.9rem)
 footer
-    div.subnav
-        width: 100%
-        height: 56px
-        background-color: color2
+    margin-top: 1.0rem
     div.main
         width: 100%
         background-image: url(/img/tile1.jpg)
         p
             color: #ffffff
             font-weight: bold
-            padding: 2.7rem 0
+            padding: 1.7rem 0
             font1(0.8rem)
 

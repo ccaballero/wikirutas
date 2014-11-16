@@ -30,6 +30,12 @@ app.locals.pretty=true;
 app.get('/',function(request,response){
     response.render('index');
 });
+app.get('/stats',function(request,response){
+    response.render('stats');
+});
+app.get('/reports',function(request,response){
+    response.render('reports');
+});
 
 app.use(function(req,res){
     res.status(404).render('404.jade',{

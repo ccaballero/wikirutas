@@ -1,80 +1,55 @@
-doctype html
-html(lang='en')
-    head
-        title wikirutas
-        link(rel='stylesheet',href='css/style.css')
-        link(rel='stylesheet',href='/font-awesome/css/font-awesome.min.css')
-        link(rel='stylesheet',href='/leaflet/dist/leaflet.css')
-    body
-        div.wrapper
-            header
-            nav
-                div.left
-                    ul
-                        li.active
-                            a Rutas Micros
-                        li
-                            a Centros Turisticos
-                        li
-                            a Tarifas de Transporte
-                div.right
-                    form
-                        input(type='text',placeholder='Busca lo que necesites: comida, rutas, etc')
-                        button(type='submit')
-                            i.fa.fa-search &nbsp;
-                .clear
-            section.main
-                nav
-                div.row
-                    nav
-                        form
-                            select
-                                option Desde aquí
-                            select
-                                option Hacia aquí
-                            input(type='submit',value='Buscar')
-                    div#map
-                    .clear
-                h2 Rutas más visitadas
-                div.columns
-                    div.column
-                        ul
-                            li: a Pollos Kingdom
-                            li: a Otros ejemplos asdf
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                        .clear
-                    div.column
-                        ul
-                            li: a Pollos Kingdom
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                        .clear
-                    div.column
-                        ul
-                            li: a Pollos Kingdom
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                        .clear
-                    div.column
-                        ul
-                            li: a Pollos Kingdom
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                            li: a Otros ejemplos
-                        .clear
-                    .clear
-            section.subnav
-        footer
-            div.subnav
-            div.main
-                div.wrapper
-                    p &copy; WikiRutas 2014
-        script(src='/jquery/dist/jquery.min.js')
-        script(src='/socket.io-client/socket.io.js')
-        script(src='/leaflet/dist/leaflet.js')
-        script(src='/leaflet-ajax/dist/leaflet.ajax.min.js')
-        script(src='/js/app.js')
+extends layout
+
+block main
+    section.main
+        div.row
+            div#map
+            .clear
+        h2 Detalles
+        div.columns
+            div.column
+                div
+                    input(type='checkbox')
+                    | &nbsp; Micro-buses.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Mini-buses.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Taxi trufis.
+            .clear
+            div.column
+                div
+                    input(type='checkbox')
+                    | &nbsp; Densidad Critica.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Densidad Alta.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Densidad Moderada.
+            .clear
+            div.column
+                div
+                    input(type='checkbox')
+                    | &nbsp; Embotellamiento Critico.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Embotellamiento Alto.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Embotellamiento Moderado.
+            .clear
+            div.column
+                div
+                    input(type='checkbox')
+                    | &nbsp; Retrasos Critico.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Retrasos Largos.
+                div
+                    input(type='checkbox')
+                    | &nbsp; Retrasos Moderados.
+            .clear
+    section.subnav
 
