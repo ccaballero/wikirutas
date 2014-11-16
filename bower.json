@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "leaflet": "~0.7.3",
-    "font-awesome": "~4.2.0"
+    "font-awesome": "~4.2.0",
+    "leaflet-ajax": "~1.1.0"
   }
 }
