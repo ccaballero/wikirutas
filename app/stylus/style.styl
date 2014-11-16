@@ -1,0 +1,174 @@
+color1 = #eff1f0
+color2 = #cad8d8
+color3 = #5f574a
+color4 = #322924
+color5 = #f9a310
+color6 = #dd8e18
+color7 = #754306
+color8 = #fca313
+color9 = #3d230a
+
+*
+    margin: 0
+    padding: 0
+    font1(10pt)
+
+font1(size)
+    font-family: Tahoma,Verdana,Segoe,sans-serif
+    font-size: size
+
+gradient1(color1,color2)
+    background: #cfe7fa
+    background: linear-gradient(to bottom, color1 0%, color2 100%)
+
+.clear
+    clear: both
+
+body
+    background-color: color1
+
+div.wrapper
+    width: 952px
+    margin: 0 auto
+    header
+        width: 100%
+        height: 112px
+
+    &>nav
+        width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        align-items: flex-end
+        align-content: stretch
+        &>div:nth-child(1)
+            float: left
+            margin-left: 8px
+            ul
+                float: left
+                list-style: none
+                li
+                    float: left
+                    a
+                        float: left
+                        font1(0.75rem)
+                        font-weight: bold
+                        padding: 0.8rem 1.5rem
+                        gradient1(color3, color4)
+                        color: #dededc
+                        border: 1px solid #c0c0c0
+                        border-right: none
+                li.active
+                    a
+                        gradient1(color6, color5)
+                        color: color7
+                li:nth-child(1)
+                    a
+                        border-top-left-radius: 0.5rem
+                        border: 1px solid #c0c0c0
+                        border-right: none
+                li:nth-child(3)
+                    a
+                        border-top-right-radius: 0.5rem
+                        border: 1px solid #c0c0c0
+        &>div:nth-child(2)
+            float: right
+            margin-left: 75px
+            form
+                background-color: #161513
+                padding: 0.5rem 1.25rem
+                display: flex
+                input[type='text']
+                    padding: 0.5rem 1.0rem 0.25rem 0.75rem
+                    border: none
+                    width: 290px
+                button
+                    background-color: #ffffff
+                    color: #000000
+                    border: none
+                    width: 28px
+                    height: 28px
+    section.main
+        background-color: #e8eeee
+        border: 1px solid #bbcecc
+        border-radius: 0.5rem
+        &>nav
+            width: 100%
+            height: 35px
+            background-color: color8
+            margin: 0.6rem 0rem
+        div.row
+            margin: 2.0rem 0rem
+            &>nav
+                float: left
+                width: 237px
+                margin-left: 8px
+                &>form
+                    display: flex
+                    flex-direction: column
+                    flex-wrap: nowrap
+                    justify-content: space-between
+                    align-items: flex-end
+                    align-content: stretch
+                    select
+                        width: 100%
+                        margin: 0.25rem 0
+                    input[type='submit']
+                        margin: 0.25rem 0
+                        border: none
+                        background-color: color8
+                        color: #ffffff
+                        font-weight: bold
+                        padding: 0.25rem 1.0rem
+                        border-radius: 0.5rem
+            div.map
+                background-color: color2
+                margin-left: 280px
+                width: 650px
+                height: 458px
+        h2
+            background-color: color8
+            color: #ffffff
+            display: inline-block
+            padding: 0.25rem 1.0rem
+            margin: 0 1.0rem 0.6rem 1.0rem
+            border-radius: 0.5rem
+            font1(0.92rem)
+        div.columns
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-around
+            align-items: center
+            align-content: center
+            margin-bottom: 1.0rem
+            div.column
+                ul
+                    list-style: none
+                    li
+                        display: block
+                        a
+                            float: left
+                            color: #295e70
+                            font-weight: bold
+                            padding: 0.35rem 0
+                            font1(0.8rem)
+    section.subnav
+        width: 100%
+        height: 90px
+
+footer
+    div.subnav
+        width: 100%
+        height: 56px
+        background-color: color2
+    div.main
+        width: 100%
+        background-image: url(/img/tile1.jpg)
+        p
+            color: #ffffff
+            font-weight: bold
+            padding: 2.7rem 0
+            font1(0.8rem)
+

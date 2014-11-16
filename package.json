@@ -1,0 +1,29 @@
+{
+  "name": "wikirutas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccaballero/wikirutas.git"
+  },
+  "author": "Carlos E. Caballero B.",
+  "license": "GPLv3",
+  "homepage": "https://github.com/ccaballero/wikirutas",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-develop": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^1.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.2",
+    "jade": "^1.7.0",
+    "request": "^2.48.0",
+    "serve-favicon": "^2.1.6",
+    "socket.io": "^1.2.0",
+    "stylus": "^0.49.3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "wikirutas",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ccaballero/wikirutas",
+  "authors": [
+    "Carlos Eduardo Caballero Burgoa <cijkb.j@gmail.com>"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3",
+    "font-awesome": "~4.2.0"
+  }
+}
