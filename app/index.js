@@ -44,6 +44,10 @@ io.sockets.on('connection',function(socket){
     });
 });
 
+setInterval(function(){
+    io.emit('track',{test:true});
+},1000)
+
 server.listen(app.get('port'),function(){
     console.log('Express server listening on port '+app.get('port'));
 });
